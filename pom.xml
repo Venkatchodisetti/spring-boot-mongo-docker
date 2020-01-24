@@ -15,6 +15,11 @@
 	<version>1.0</version>
 	<properties>
 		<java.version>1.8</java.version>
+		<sonar.host.url>http://3.6.36.251:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>admin</sonar.password>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -46,6 +51,23 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Vamsy-rele</name>
+	      <url>http://15.206.187.174:8081/repository/spring-rel/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>vamsy-snap</name>
+	      <url>http://15.206.187.174:8081/repository/spring-snap/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
