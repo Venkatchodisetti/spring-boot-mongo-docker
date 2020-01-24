@@ -57,7 +57,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Vamsy-rele</name>
-	      <url>http://52.66.240.103:8081/repository/spring-rel/</url>
+	      <url>http://52.66.240.103:8081/repository/spring-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
