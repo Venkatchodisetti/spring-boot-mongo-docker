@@ -12,7 +12,7 @@ spec:
         name: springboot
     spec:
       containers:
-      - image: venkatchodisetti/spring:${BUILD_ID}
+      - image: venkatchodisetti/spring:latest
         name: springboot
         ports:
         - name: springboot
